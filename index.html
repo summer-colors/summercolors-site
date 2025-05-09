@@ -22,49 +22,29 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    .slideshow {
-      position: relative;
-      width: 100%;
-      max-height: 600px;
-      overflow: hidden;
-    }
-
-    .slideshow .slide {
-      display: none;
-      position: absolute;
-      width: 100%;
-      height: 600px;
-    }
-
-    .slideshow .slide img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .slideshow .text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
+    header {
+      background-color: #b3dff2;
+      color: #167dac;
       text-align: center;
+      padding: 60px 20px 30px 20px;
     }
 
-    .slideshow .text h1 {
-      font-size: 80px;
+    header h1 {
+      font-size: 120px;
       margin: 0;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+      color: #167dac;
     }
 
-    .slideshow .text h2 {
-      font-size: 40px;
+    header h2 {
+      font-size: 36px;
       margin: 10px 0;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+      font-weight: 500;
     }
 
-    .slideshow .slide:target {
-      display: block;
+    header p {
+      font-size: 20px;
+      margin: 5px 0;
+      font-style: italic;
     }
 
     nav {
@@ -92,15 +72,15 @@
     }
 
     h2 {
-      color: #90c5d7;
-      margin-top: 30px;
+      color: #167dac;
       font-size: 40px;
+      margin-top: 30px;
     }
 
     p {
       line-height: 1.7;
       font-size: 20px;
-      color: #000000;
+      color: #000;
     }
 
     .highlight {
@@ -116,6 +96,23 @@
       border-radius: 8px;
     }
 
+    .slideshow-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .slide {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      display: none;
+      transition: opacity 1s ease-in-out;
+    }
+
     footer {
       background-color: #d5f1fb;
       text-align: center;
@@ -124,65 +121,15 @@
       color: #333;
       font-size: 16px;
     }
-
-    footer a {
-      color: #17678c;
-      text-decoration: none;
-    }
-  </style>.slideshow-container {
-  max-width: 1000px;
-  margin: 40px auto;
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.slide {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  display: none;
-  transition: opacity 1s ease-in-out;
-}
+  </style>
 </head>
-<body><script>
-  let slideIndex = 0;
-  showSlides();
-  
-  function showSlides() {
-    const slides = document.getElementsByClassName("slide");
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1; }
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 3000); // Change every 3 seconds
-  }
-  </script>
-  <!-- Simple Slideshow -->
-<div class="slideshow-container">
-  <img class="slide" src="images/slides/slide1.jpg" style="display: block;">
-  <img class="slide" src="images/slides/slide2.jpg">
-  <img class="slide" src="images/slides/slide3.jpg">
-  <img class="slide" src="images/slides/slide4.jpg">
-  <img class="slide" src="images/slides/slide5.jpg">
-  <img class="slide" src="images/slides/slide6.jpg">
-  <img class="slide" src="images/slides/slide7.jpg">
-  <img class="slide" src="images/slides/slide8.jpg">
-</div>
+<body>
 
-  <!-- Slideshow at the top -->
-  <div class="slideshow">
-    <div class="slide" style="display:block">
-      <img src="images/slide1.jpg" alt="Slide 1">
-      <div class="text">
-        <h1>Summer Colors</h1>
-        <h2>Rooms & Apartments</h2>
-      </div>
-    </div>
-  </div>
+  <header>
+    <h1>Summer Colors</h1>
+    <h2>Rooms & Apartments</h2>
+    <p>The best accommodation in Meta di Sorrento</p>
+  </header>
 
   <nav>
     <a href="index.html">Home</a>
@@ -191,6 +138,18 @@
   </nav>
 
   <main>
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+      <img class="slide" src="images/slides/slide1.jpg" style="display: block;">
+      <img class="slide" src="images/slides/slide2.jpg">
+      <img class="slide" src="images/slides/slide3.jpg">
+      <img class="slide" src="images/slides/slide4.jpg">
+      <img class="slide" src="images/slides/slide5.jpg">
+      <img class="slide" src="images/slides/slide6.jpg">
+      <img class="slide" src="images/slides/slide7.jpg">
+      <img class="slide" src="images/slides/slide8.jpg">
+    </div>
+
     <h2>Welcome to Summer Colors</h2>
 
     <!-- Property Photo -->
@@ -228,15 +187,30 @@
   </main>
 
   <footer>
-    <p>
-      📍 Summer Colors Rooms and Apartments<br />
-      📧 <a href="mailto:summercolors2025@gmail.com">summercolors2025@gmail.com</a><br />
-      📞 +39 339 876 1635<br />
-      📲 Instagram: @summercolors2025<br />
-      📘 Facebook: Summer Colors<br />
-      Address: Via Rivolo 2, Meta di Sorrento, NA Italia
-    </p>
+    <p>📍 Summer Colors Rooms and Apartments</p>
+    <p>📧 <a href="mailto:summercolors2025@gmail.com">summercolors2025@gmail.com</a></p>
+    <p>📞 +39 339 876 1635</p>
+    <p>📲 Instagram: @summercolors2025</p>
+    <p>📘 Facebook: Summer Colors</p>
+    <p>Address: Via Rivolo 2, Meta di Sorrento, NA Italia</p>
   </footer>
+
+  <!-- JavaScript for Slideshow -->
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      const slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1; }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change every 3 seconds
+    }
+  </script>
 
 </body>
 </html>
