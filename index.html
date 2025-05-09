@@ -129,9 +129,49 @@
       color: #17678c;
       text-decoration: none;
     }
-  </style>
+  </style>.slideshow-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.slide {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: none;
+  transition: opacity 1s ease-in-out;
+}
 </head>
-<body>
+<body><script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    const slides = document.getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1; }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change every 3 seconds
+  }
+  </script>
+  <!-- Simple Slideshow -->
+<div class="slideshow-container">
+  <img class="slide" src="images/slides/slide1.jpg" style="display: block;">
+  <img class="slide" src="images/slides/slide2.jpg">
+  <img class="slide" src="images/slides/slide3.jpg">
+  <img class="slide" src="images/slides/slide4.jpg">
+  <img class="slide" src="images/slides/slide5.jpg">
+  <img class="slide" src="images/slides/slide6.jpg">
+  <img class="slide" src="images/slides/slide7.jpg">
+  <img class="slide" src="images/slides/slide8.jpg">
+</div>
 
   <!-- Slideshow at the top -->
   <div class="slideshow">
