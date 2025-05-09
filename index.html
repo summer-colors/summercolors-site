@@ -22,29 +22,49 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    header {
-      background-color: #b3dff2;
-      color: #167dac;
+    .slideshow {
+      position: relative;
+      width: 100%;
+      max-height: 600px;
+      overflow: hidden;
+    }
+
+    .slideshow .slide {
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 600px;
+    }
+
+    .slideshow .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .slideshow .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
       text-align: center;
-      padding: 60px 20px 30px 20px;
     }
 
-    header h1 {
-      font-size: 120px;
+    .slideshow .text h1 {
+      font-size: 80px;
       margin: 0;
-      color: #167dac;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
     }
 
-    header h2 {
-      font-size: 36px;
+    .slideshow .text h2 {
+      font-size: 40px;
       margin: 10px 0;
-      font-weight: 500;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
     }
 
-    header p {
-      font-size: 20px;
-      margin: 5px 0;
-      font-style: italic;
+    .slideshow .slide:target {
+      display: block;
     }
 
     nav {
@@ -80,7 +100,7 @@
     p {
       line-height: 1.7;
       font-size: 20px;
-      color: #000000; /* force normal text to be black */
+      color: #000000;
     }
 
     .highlight {
@@ -113,11 +133,16 @@
 </head>
 <body>
 
-  <header>
-    <h1>Summer Colors</h1>
-    <h2>Rooms & Apartments</h2>
-    <p>The best accommodation in Meta di Sorrento</p>
-  </header>
+  <!-- Slideshow at the top -->
+  <div class="slideshow">
+    <div class="slide" style="display:block">
+      <img src="images/slide1.jpg" alt="Slide 1">
+      <div class="text">
+        <h1>Summer Colors</h1>
+        <h2>Rooms & Apartments</h2>
+      </div>
+    </div>
+  </div>
 
   <nav>
     <a href="index.html">Home</a>
@@ -163,12 +188,14 @@
   </main>
 
   <footer>
-    <p>📍 Summer Colors Rooms and Apartments</p>
-    <p>📧 <a href="mailto:summercolors2025@gmail.com">summercolors2025@gmail.com</a></p>
-    <p>📞 +39 339 876 1635</p>
-    <p>📲 Instagram: @summercolors2025</p>
-    <p>📘 Facebook: Summer Colors</p>
-    <p>Address: Via Rivolo 2, Meta di Sorrento, NA Italia</p>
+    <p>
+      📍 Summer Colors Rooms and Apartments<br />
+      📧 <a href="mailto:summercolors2025@gmail.com">summercolors2025@gmail.com</a><br />
+      📞 +39 339 876 1635<br />
+      📲 Instagram: @summercolors2025<br />
+      📘 Facebook: Summer Colors<br />
+      Address: Via Rivolo 2, Meta di Sorrento, NA Italia
+    </p>
   </footer>
 
 </body>
