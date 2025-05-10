@@ -2,115 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us - Summer Colors</title>
 
-  <!-- Google Font for header -->
-  <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="Cormorant Garamond" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;600;700&display=swap" rel="stylesheet" />
 
   <style>
     body {
-      font-family: 'Cormorant Garamond', 'Cormorant Garamond';
       margin: 0;
-      padding: 0;
-      background-color: #f0f8ff; /* light blue */
-      color: #333;
+      font-family: 'Cormorant Infant', serif;
+      background-color: #eaf6fb;
+      color: #212122;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     header {
-      background-color: #87ceeb; /* sky blue */
+      background-color: #87cde9;
       color: white;
       padding: 30px 20px;
       text-align: center;
     }
 
     header h1 {
-      font-family: 'Cormorant Garamond';
-      font-size: 70px;
-      margin-bottom: 10px;
+      font-size: 80px;
+      margin: 0;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 26px;
+      margin-top: 10px;
+      font-style: italic;
     }
 
     nav {
-      background-color: #4682b4; /* steel blue */
+      background-color: #87cde9;
       display: flex;
       justify-content: center;
     }
 
     nav a {
-      color: white;
-      padding: 14px 20px;
+      color: #17678c;
       text-decoration: none;
+      padding: 14px 20px;
       font-weight: bold;
+      font-size: 18px;
     }
 
     nav a:hover {
-      background-color: #5a9bd4;
+      background-color: #a3daf0;
     }
 
     main {
-      padding: 30px 20px;
-      max-width: 700px;
+      max-width: 800px;
       margin: auto;
+      padding: 40px 20px;
     }
 
     h2 {
-      color: #4682b4;
+      color: #167dac;
+      font-size: 36px;
       margin-top: 30px;
     }
 
-    form {
-      display: flex;
-      flex-direction: column;
+    p {
+      font-size: 20px;
+      line-height: 1.6;
     }
 
-    label {
-      margin-top: 15px;
-      font-weight: bold;
+    .contact-info p {
+      margin: 10px 0;
     }
 
-    input, textarea {
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
+    footer {
+      background-color: #d5f1fb;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      color: #333;
       font-size: 16px;
-    }
-
-    textarea {
-      resize: vertical;
-      min-height: 100px;
-    }
-
-    button {
-      margin-top: 20px;
-      background-color: #4682b4;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    button:hover {
-      background-color: #5a9bd4;
     }
 
     a {
-      color: #4682b4;
+      color: #17678c;
       text-decoration: none;
     }
 
     a:hover {
       text-decoration: underline;
-    }
-
-    footer {
-      background-color: #dbeeff;
-      color: #333;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
     }
   </style>
 </head>
@@ -118,7 +104,7 @@
 
   <header>
     <h1>Contact Us</h1>
-    <p>We'd love to hear from you</p>
+    <p>We’d love to welcome you to Meta di Sorrento</p>
   </header>
 
   <nav>
@@ -128,34 +114,19 @@
   </nav>
 
   <main>
-    <h2>Send us a message</h2>
-    <form>
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">Your Email</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="message">Your Message</label>
-      <textarea id="message" name="message" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-
     <h2>Contact Information</h2>
-    
-    
-    </p>📍 Summer Colors Rooms and Apartments<p>
+    <div class="contact-info">
+      <p>📍 <strong>Summer Colors Rooms and Apartments</strong></p>
       <p>📧 <a href="mailto:summercolors2025@gmail.com">summercolors2025@gmail.com</a></p>
       <p>📞 +39 339 876 1635</p>
-      <p>📲 Instagram: @summercolors2025</p>
-      <p>📘 Facebook: Summer Colors</p>
-
-      <p>Address: Via Rivolo 2, Meta di Sorrento, NA Italia</p>
+      <p>📲 Instagram: <a href="https://instagram.com/summercolors2025" target="_blank">@summercolors2025</a></p>
+      <p>📘 Facebook: <a href="https://facebook.com/summercolors" target="_blank">Summer Colors</a></p>
+      <p>📍 Address: Via Rivolo 2, Meta di Sorrento, NA Italia</p>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 Summer Colors Rooms and Apartment</p>
+    <p>&copy; 2025 Summer Colors Rooms and Apartments</p>
   </footer>
 
 </body>
