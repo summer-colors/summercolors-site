@@ -23,6 +23,7 @@
     }
 
     header {
+      position: relative;
       background-image: url('images/house.jpg');
       background-size: cover;
       background-position: center;
@@ -35,12 +36,26 @@
       color: white;
     }
 
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+      z-index: 0;
+    }
+
+    header h1, header h2 {
+      position: relative;
+      z-index: 1;
+    }
+
     header h1 {
       font-size: 120px;
       margin: 0;
       font-weight: 600;
       letter-spacing: 2px;
-      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+      color: #ffffff;
     }
 
     header h2 {
@@ -48,7 +63,8 @@
       margin-top: 10px;
       font-weight: 400;
       font-style: italic;
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+      color: #ffffff;
     }
 
     nav {
@@ -112,7 +128,7 @@
     .slides {
       display: flex;
       width: 800%;
-      animation: slide 16s infinite;
+      animation: slide 32s infinite;
     }
 
     .slides img {
@@ -122,15 +138,15 @@
     }
 
     @keyframes slide {
-      0%   { transform: translateX(0%); }
+      0%    { transform: translateX(0%); }
       12.5% { transform: translateX(-100%); }
-      25% { transform: translateX(-200%); }
+      25%   { transform: translateX(-200%); }
       37.5% { transform: translateX(-300%); }
-      50% { transform: translateX(-400%); }
+      50%   { transform: translateX(-400%); }
       62.5% { transform: translateX(-500%); }
-      75% { transform: translateX(-600%); }
+      75%   { transform: translateX(-600%); }
       87.5% { transform: translateX(-700%); }
-      100% { transform: translateX(0%); }
+      100%  { transform: translateX(0%); }
     }
 
     footer {
