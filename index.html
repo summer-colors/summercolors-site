@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Summer Colors Rooms & Apartments</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
 
   <style>
     body {
@@ -27,25 +27,38 @@
       background-size: cover;
       background-position: center;
       height: 400px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+      position: relative;
       color: white;
     }
 
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    header h1,
+    header h2 {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
     header h1 {
-      font-size: 80px;
+      font-family: 'Great Vibes', cursive;
+      font-size: 90px;
       margin: 0;
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+      text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
     }
 
     header h2 {
       font-size: 36px;
       margin-top: 10px;
       font-weight: 400;
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+      font-family: 'Cormorant Garamond', serif;
     }
 
     nav {
@@ -105,6 +118,11 @@
       color: #333;
       font-size: 16px;
     }
+
+    footer a {
+      color: #17678c;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
@@ -128,6 +146,9 @@
       Summer Colors Rooms & Apartments offers a peaceful getaway in the heart of the Sorrento Coast.
     </p>
 
+    <!-- House image below first paragraph -->
+    <img src="images/house.jpg" alt="Summer Colors House Exterior" />
+
     <p>
       We offer both comfortable <span class="highlight">rooms and spacious apartments</span>, many featuring private <span class="highlight">balconies or terraces</span>.
       All rooms and apartments include <span class="highlight">private bathrooms</span> and air conditioning.
@@ -148,7 +169,7 @@
       Whether you're traveling as a couple, family, or solo, we look forward to making your stay relaxing and unforgettable.
     </p>
 
-    <!-- Map Image -->
+    <!-- Map -->
     <h2>Where to Find Us</h2>
     <p>We're located in beautiful Meta di Sorrento, walking distance from the beach and train station.</p>
     <img src="images/map1.jpg" alt="Map to Summer Colors" />
