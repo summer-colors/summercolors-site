@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Summer Colors Rooms & Apartments</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet" />
 
   <style>
     body {
@@ -27,38 +27,28 @@
       background-size: cover;
       background-position: center;
       height: 400px;
-      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
       color: white;
     }
 
-    header::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-color: rgba(0, 0, 0, 0.4);
-      z-index: 1;
-    }
-
-    header h1,
-    header h2 {
-      position: relative;
-      z-index: 2;
-      text-align: center;
-    }
-
     header h1 {
-      font-family: 'Great Vibes', cursive;
       font-size: 90px;
       margin: 0;
-      text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
     }
 
     header h2 {
-      font-size: 36px;
+      font-size: 34px;
       margin-top: 10px;
       font-weight: 400;
-      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
-      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
     }
 
     nav {
@@ -110,6 +100,39 @@
       border-radius: 8px;
     }
 
+    .slideshow {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .slides {
+      display: flex;
+      width: 800%;
+      animation: slide 16s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0%   { transform: translateX(0%); }
+      12.5% { transform: translateX(-100%); }
+      25% { transform: translateX(-200%); }
+      37.5% { transform: translateX(-300%); }
+      50% { transform: translateX(-400%); }
+      62.5% { transform: translateX(-500%); }
+      75% { transform: translateX(-600%); }
+      87.5% { transform: translateX(-700%); }
+      100% { transform: translateX(0%); }
+    }
+
     footer {
       background-color: #d5f1fb;
       text-align: center;
@@ -117,11 +140,6 @@
       margin-top: 40px;
       color: #333;
       font-size: 16px;
-    }
-
-    footer a {
-      color: #17678c;
-      text-decoration: none;
     }
   </style>
 </head>
@@ -146,8 +164,7 @@
       Summer Colors Rooms & Apartments offers a peaceful getaway in the heart of the Sorrento Coast.
     </p>
 
-    <!-- House image below first paragraph -->
-    <img src="images/house.jpg" alt="Summer Colors House Exterior" />
+    <img src="images/house.jpg" alt="House Exterior" />
 
     <p>
       We offer both comfortable <span class="highlight">rooms and spacious apartments</span>, many featuring private <span class="highlight">balconies or terraces</span>.
@@ -169,7 +186,21 @@
       Whether you're traveling as a couple, family, or solo, we look forward to making your stay relaxing and unforgettable.
     </p>
 
-    <!-- Map -->
+    <!-- Slideshow Section -->
+    <div class="slideshow">
+      <div class="slides">
+        <img src="images/slides/slide1.jpg" alt="Slide 1" />
+        <img src="images/slides/slide2.jpg" alt="Slide 2" />
+        <img src="images/slides/slide3.jpg" alt="Slide 3" />
+        <img src="images/slides/slide4.jpg" alt="Slide 4" />
+        <img src="images/slides/slide5.jpg" alt="Slide 5" />
+        <img src="images/slides/slide6.jpg" alt="Slide 6" />
+        <img src="images/slides/slide7.jpg" alt="Slide 7" />
+        <img src="images/slides/slide8.jpg" alt="Slide 8" />
+      </div>
+    </div>
+
+    <!-- Map Image -->
     <h2>Where to Find Us</h2>
     <p>We're located in beautiful Meta di Sorrento, walking distance from the beach and train station.</p>
     <img src="images/map1.jpg" alt="Map to Summer Colors" />
