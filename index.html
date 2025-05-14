@@ -11,7 +11,7 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Cormorat Infant', serif;
+      font-family: 'Cormorant Infant', serif;
       background-color: #eaf6fb;
       color: #212122;
       animation: fadeIn 1.5s ease-in;
@@ -40,7 +40,7 @@
       content: "";
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-      background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+      background-color: rgba(0, 0, 0, 0.4);
       z-index: 0;
     }
 
@@ -149,6 +149,27 @@
       100%  { transform: translateX(0%); }
     }
 
+    .reviews-section {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #f2fbff;
+    }
+
+    .reviews-section h2 {
+      font-size: 36px;
+      color: #167dac;
+      margin-bottom: 30px;
+    }
+
+    .review-img, .map-img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
     footer {
       background-color: #d5f1fb;
       text-align: center;
@@ -156,6 +177,15 @@
       margin-top: 40px;
       color: #333;
       font-size: 16px;
+    }
+
+    footer a {
+      color: #167dac;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -220,13 +250,14 @@
     <!-- Map Image -->
     <h2>Where to Find Us</h2>
     <p>We're located in beautiful Meta di Sorrento, walking distance from the beach and train station.</p>
-    <img src="images/map1.jpg" alt="Map to Summer Colors" />
+    <img src="images/map1.jpg" alt="Map to Summer Colors" class="map-img" />
   </main>
 
-  <section style="text-align: center; padding: 40px 20px; background-color: #f2fbff;">
-    <h2 style="font-size: 36px; color: #167dac; margin-bottom: 30px;">What Guests Are Saying</h2>
-    <img src="images/review1.jpg" alt="Guest Review 1" style="width: 100%; max-width: 800px; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 30px;" />
-    <img src="images/review2.jpg" alt="Guest Review 2" style="width: 100%; max-width: 800px; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+  <!-- Reviews Section -->
+  <section class="reviews-section">
+    <h2>What Guests Are Saying</h2>
+    <img src="images/review1.jpg" alt="Guest Review 1" class="review-img" />
+    <img src="images/review2.jpg" alt="Guest Review 2" class="review-img" />
   </section>
 
   <footer>
