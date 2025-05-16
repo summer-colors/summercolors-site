@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Extra Services - Summer Colors</title>
-
+  <title>Our Common Areas - Summer Colors</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;600;700&display=swap" rel="stylesheet" />
 
   <style>
@@ -38,6 +37,7 @@
       background-color: #87cde9;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -70,11 +70,18 @@
       color: #000;
     }
 
-    ul {
-      font-size: 20px;
-      color: #000;
-      line-height: 1.7;
-      padding-left: 20px;
+    .highlight {
+      font-weight: bold;
+      color: #256d85;
+    }
+
+    img {
+      width: 100%;
+      max-height: 600px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 20px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
     footer {
@@ -90,38 +97,62 @@
       color: #17678c;
       text-decoration: none;
     }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Extra Services</h1>
-    <p>Everything you need for a relaxing and carefree stay</p>
+    <h1>Our Common Areas</h1>
+    <p>Shared spaces designed for comfort, convenience, and relaxation</p>
   </header>
 
   <nav>
     <a href="index.html">Home</a>
     <a href="rooms & apartments.html">Rooms & Apartments</a>
     <a href="extra-services.html">Extra Services</a>
-    <a href="common-areas.html">Our Common Areas</a>  <!-- NEW LINK HERE -->
+    <a href="common-areas.html">Our Common Areas</a>
     <a href="contact.html">Contact</a>
   </nav>
 
   <main>
-    <h2>Enhance Your Stay</h2>
-    <p>At Summer Colors Rooms & Apartments, we’re dedicated to offering much more than just a place to sleep. Our goal is to help you enjoy every moment of your stay in the Sorrento Peninsula. That’s why we offer a range of thoughtful extra services designed to make your experience comfortable, personalized, and unforgettable.</p>
+    <h2>Reception</h2>
+    <p>
+      Our <span class="highlight">reception</span> is open daily from <span class="highlight">12:00 PM to 08:00 PM</span>, where we provide full concierge assistance. We're happy to offer <span class="highlight">local tips, book restaurants, cooking classes, tours, transfers</span> and more to make your stay unforgettable.
+    </p>
+    <img src="images/reception1.jpg" alt="Reception Area" />
 
-    <ul>
-      <li>  Personalized guest assistance from our multilingual concierge (English, Italian, Spanish, German)</li>
-      <li>  Booking of private and group transfer services</li>
-      <li>  Assistance in booking private and group day tours to Capri, Amalfi Coast, Pompeii, and more</li>
-      <li>  Cooking class bookings for authentic Italian culinary experiences</li>
-      <li>  Restaurant recommendations and reservations</li>
-      <li>  Personalized suggestions on what to do, where to go, and hidden gems in the area</li>
-      <li>  On-site sale of drinks and snacks – no need to leave the property</li>
-    </ul>
+    <h2>Entrance Lounge</h2>
+    <p>
+      The <span class="highlight">entrance lounge</span> is a cozy space where guests can <span class="highlight">relax, store their luggage, use the toilet facilities</span>, or simply unwind on our comfortable sofas and chairs after a day of exploring.
+    </p>
+    <img src="images/entrance2.jpg" alt="Entrance Lounge Area" />
 
-    <p>We’re here to help you make the most of your time in Meta di Sorrento. Whether you’re looking to relax, explore, or enjoy local culture, just let us know—we’ll take care of the rest!</p>
+    <h2>Veranda</h2>
+    <p>
+      In our spacious <span class="highlight">veranda</span>, guests have access to <span class="highlight">plates, cutlery, a tap for washing, and a surface for preparing light meals</span>. There's also an <span class="highlight">iron and ironing board</span> available, and a lovely <span class="highlight">view of the garden and pool</span>.
+    </p>
+    <img src="images/veranda3.jpg" alt="Veranda Shared Area" />
+
+    <h2>Garden</h2>
+    <p>
+      Our peaceful <span class="highlight">garden</span> is equipped with <span class="highlight">sunbeds, umbrellas, and a gazebo</span>. Under the gazebo, you'll find a <span class="highlight">table and chairs</span> — perfect for relaxing in the shade.
+    </p>
+    <img src="images/garden1.jpg" alt="Garden Area" />
+
+    <h2>Pool &amp; Solarium</h2>
+    <p>
+      Enjoy our <span class="highlight">pool</span>, open daily from <span class="highlight">09:00 AM to 07:00 PM</span>, along with our sunny <span class="highlight">solarium area</span>. There's also a <span class="highlight">shower</span> for your convenience.
+    </p>
+    <img src="images/pool.jpg" alt="Pool and Solarium Area" />
+
+    <h2>Parking</h2>
+    <p>
+      <span class="highlight">Parking is available on request</span>. Please contact us in advance after your reservation to arrange a spot.
+    </p>
   </main>
 
   <footer>
