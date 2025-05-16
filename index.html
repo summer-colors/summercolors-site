@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Common Areas - Summer Colors</title>
+  <title>Summer Colors Rooms & Apartments</title>
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -50,18 +50,21 @@
     }
 
     header h1 {
-      font-size: 80px;
+      font-size: 100px;
       margin: 0;
       font-weight: 600;
+      letter-spacing: 2px;
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+      color: #ffffff;
     }
 
     header h2 {
-      font-size: 30px;
+      font-size: 34px;
       margin-top: 10px;
       font-weight: 400;
       font-style: italic;
       text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+      color: #ffffff;
     }
 
     nav {
@@ -100,6 +103,11 @@
       color: #000;
     }
 
+    .highlight {
+      font-weight: bold;
+      color: #256d85;
+    }
+
     img {
       width: 100%;
       max-height: 600px;
@@ -108,9 +116,69 @@
       border-radius: 8px;
     }
 
-    .highlight {
-      font-weight: bold;
-      color: #256d85;
+    .slideshow {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .slides {
+      display: flex;
+      width: 800%;
+      animation: slide 1000s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0%    { transform: translateX(0%); }
+      12.5% { transform: translateX(-100%); }
+      25%   { transform: translateX(-200%); }
+      37.5% { transform: translateX(-300%); }
+      50%   { transform: translateX(-400%); }
+      62.5% { transform: translateX(-500%); }
+      75%   { transform: translateX(-600%); }
+      87.5% { transform: translateX(-700%); }
+      100%  { transform: translateX(0%); }
+    }
+
+    .reviews-section {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #f2fbff;
+    }
+
+    .reviews-section h2 {
+      font-size: 36px;
+      color: #167dac;
+      margin-bottom: 30px;
+    }
+
+    .review-img {
+      max-width: 700px;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .map-img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
     }
 
     footer {
@@ -136,49 +204,72 @@
 
   <header>
     <h1>Summer Colors</h1>
-    <h2>Our Common Areas</h2>
+    <h2>Rooms & Apartments</h2>
   </header>
 
   <nav>
     <a href="index.html">Home</a>
     <a href="rooms & apartments.html">Rooms & Apartments</a>
     <a href="extra-services.html">Extra Services</a>
-    <a href="common-areas.html">Our Common Areas</a>
+    <a href="common-areas.html">Our Common Areas</a>  <!-- NEW LINK HERE -->
     <a href="contact.html">Contact</a>
   </nav>
 
   <main>
-    <h2>Explore Our Shared Spaces</h2>
+    <h2>Welcome to Summer Colors</h2>
 
     <p>
-      At <span class="highlight">Summer Colors Rooms & Apartments</span>, we want your stay to be as comfortable and relaxing as possible. In addition to your private space, you’ll enjoy access to a variety of charming and useful <span class="highlight">common areas</span>.
+      Located in the charming town of <span class="highlight">Meta di Sorrento</span>, just a short walk from the beach and the train station,
+      Summer Colors Rooms & Apartments offers a peaceful getaway in the heart of the Sorrento Coast.
     </p>
 
-    <h2>Reception & Entrance Hall</h2>
+    <img src="images/house1.jpg" alt="House Exterior" />
+
     <p>
-      Our friendly staff is ready to greet you at the <span class="highlight">reception area</span>, where we’re happy to provide local tips, tour info, and restaurant recommendations.
+      We offer both comfortable <span class="highlight">rooms and spacious apartments</span>, many featuring private <span class="highlight">balconies or terraces</span>.
+      All rooms and apartments include <span class="highlight">private bathrooms</span> and air conditioning.
     </p>
-    <img src="images/common/reception.jpg" alt="Reception Area" />
 
-    <h2>Veranda & Lounge</h2>
     <p>
-      Relax in our cozy <span class="highlight">indoor lounge</span> or enjoy the fresh breeze on the <span class="highlight">covered veranda</span>, the perfect place to sip a morning coffee or unwind in the evening.
+      Guests can relax in our beautiful <span class="highlight">pool and solarium area</span>, surrounded by a lush garden featuring
+      a charming gazebo and comfortable sunbeds. Common areas include an inviting <span class="highlight">entrance lounge, a covered veranda, and a welcoming reception</span>.
     </p>
-    <img src="images/common/veranda.jpg" alt="Veranda" />
 
-    <h2>Garden with Gazebo</h2>
     <p>
-      Surrounded by lemon trees and colorful blooms, our <span class="highlight">garden</span> features a shaded <span class="highlight">gazebo</span> — ideal for a quiet afternoon or friendly gathering.
+      Our friendly and multilingual team is always ready to offer tips and assistance —
+      whether it’s <span class="highlight">booking tours, recommending restaurants, or helping plan your perfect day</span> on the coast.
+      We speak <span class="highlight">English, Italian, Spanish, and German</span> to better serve you.
     </p>
-    <img src="images/common/garden.jpg" alt="Garden with Gazebo" />
 
-    <h2>Pool & Solarium</h2>
     <p>
-      Cool off in our refreshing <span class="highlight">pool</span> or soak up the sun in the <span class="highlight">solarium</span>, equipped with comfortable sunbeds and umbrellas. A favorite spot for guests of all ages!
+      Whether you're traveling as a couple, family, or solo, we look forward to making your stay relaxing and unforgettable.
     </p>
-    <img src="images/common/pool.jpg" alt="Pool and Solarium" />
 
+    <!-- Slideshow Section -->
+    <div class="slideshow">
+      <div class="slides">
+        <img src="images/slides/slide1.jpg" alt="Slide 1" />
+        <img src="images/slides/slide2.jpg" alt="Slide 2" />
+        <img src="images/slides/slide3.jpg" alt="Slide 3" />
+        <img src="images/slides/slide4.jpg" alt="Slide 4" />
+        <img src="images/slides/slide5.jpg" alt="Slide 5" />
+        <img src="images/slides/slide6.jpg" alt="Slide 6" />
+        <img src="images/slides/slide7.jpg" alt="Slide 7" />
+        <img src="images/slides/slide8.jpg" alt="Slide 8" />
+      </div>
+    </div>
+
+    <!-- Map Image -->
+    <h2>Where to Find Us</h2>
+    <p>We're located in beautiful Meta di Sorrento, walking distance from the beach and train station.</p>
+    <img src="images/map1.jpg" alt="Map to Summer Colors" class="map-img" />
   </main>
+
+  <!-- Reviews Section -->
+  <section class="reviews-section">
+    <h2>What Guests Are Saying</h2>
+    <img src="images/review1.jpg" alt="Guest Review 1" class="review-img" />
+  </section>
 
   <footer>
     <p>📍 <strong>Summer Colors Rooms and Apartments</strong></p>
