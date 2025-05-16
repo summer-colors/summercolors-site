@@ -7,32 +7,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     body {
-      margin: 0;
       font-family: 'Cormorant Infant', serif;
+      margin: 0;
       background-color: #eaf6fb;
       color: #212122;
-      animation: fadeIn 1.5s ease-in;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+
     header {
-      background-color: #167dac;
+      background-color: #87cde9;
       color: white;
+      padding: 40px 20px;
       text-align: center;
-      padding: 50px 20px 30px;
     }
+
     header h1 {
       font-size: 60px;
-      margin: 0;
+      margin-bottom: 10px;
+      font-weight: 600;
     }
+
+    header p {
+      font-size: 24px;
+      font-style: italic;
+      margin-top: 0;
+    }
+
     nav {
       background-color: #87cde9;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
     }
+
     nav a {
       color: #17678c;
       text-decoration: none;
@@ -40,28 +46,29 @@
       font-weight: bold;
       font-size: 18px;
     }
+
     nav a:hover {
       background-color: #a3daf0;
     }
+
     main {
       max-width: 1000px;
       margin: auto;
       padding: 30px 20px;
     }
+
     h2 {
-      font-size: 32px;
       color: #167dac;
-      margin-top: 40px;
+      font-size: 36px;
+      margin-top: 30px;
     }
+
     p {
       font-size: 20px;
       line-height: 1.7;
       color: #000;
     }
-    .highlight {
-      font-weight: bold;
-      color: #256d85;
-    }
+
     img {
       width: 100%;
       max-height: 600px;
@@ -70,6 +77,7 @@
       margin: 20px 0;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
+
     footer {
       background-color: #d5f1fb;
       text-align: center;
@@ -78,10 +86,12 @@
       color: #333;
       font-size: 16px;
     }
+
     footer a {
-      color: #167dac;
+      color: #17678c;
       text-decoration: none;
     }
+
     footer a:hover {
       text-decoration: underline;
     }
@@ -89,63 +99,52 @@
 </head>
 <body>
 
-<header>
-  <h1>Our Common Areas</h1>
-</header>
+  <header>
+    <h1>Our Common Areas</h1>
+    <p>Discover our cozy and functional shared spaces</p>
+  </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="rooms & apartments.html">Rooms & Apartments</a>
-  <a href="extra-services.html">Extra Services</a>
-  <a href="common-areas.html">Our Common Areas</a>  <!-- NEW LINK HERE -->
-  <a href="contact.html">Contact</a>
-</nav>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="rooms & apartments.html">Rooms & Apartments</a>
+    <a href="extra-services.html">Extra Services</a>
+    <a href="common-areas.html">Our Common Areas</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-<main>
-  <h2>Reception</h2>
-  <p>
-    Our <span class="highlight">reception</span> is open daily from <span class="highlight">12:00 PM to 08:00 PM</span>, where we provide full concierge assistance. We're happy to offer <span class="highlight">local tips, book restaurants, cooking classes, tours, transfers</span> and more to make your stay unforgettable.
-  </p>
-  <img src="images/reception1.jpg" alt="Reception Area" />
+  <main>
+    <h2>Reception</h2>
+    <p>The reception is open from 12 to 8 PM and we assist with restaurant reservations, tour and transfer bookings, or just providing local tips.</p>
+    <img src="images/reception1.jpg" alt="Reception area" />
 
-  <h2>Entrance Lounge</h2>
-  <p>
-    The <span class="highlight">entrance lounge</span> is a cozy space where guests can <span class="highlight">relax, store their luggage, use the toilet facilities</span>, or simply unwind on our comfortable sofas and chairs after a day of exploring.
-  </p>
-  <img src="images/entrance2.jpg" alt="Entrance Lounge Area" />
+    <h2>Entrance and Lounge Area</h2>
+    <p>Right by the entrance we have a welcoming lounge with a few sofas and chairs, ideal for relaxing while waiting for a transfer, or just resting. There is also a toilet available in this area and we can store your luggage if needed.</p>
+    <img src="images/entrance2.jpg" alt="Lounge and entrance" />
 
-  <h2>Veranda</h2>
-  <p>
-    In our spacious <span class="highlight">veranda</span>, guests have access to <span class="highlight">plates, cutlery, a tap for washing, and a surface for preparing light meals</span>. There's also an <span class="highlight">iron and ironing board</span> available, and a lovely <span class="highlight">view of the garden and pool</span>.
-  </p>
-  <img src="images/veranda3.jpg" alt="Veranda Shared Area" />
+    <h2>Veranda</h2>
+    <p>In our veranda you can find a surface to eat or prepare simple meals, a sink, some plates, cutlery, cups and a kettle. There’s also an iron and ironing board available, and a nice view of the pool and garden.</p>
+    <img src="images/veranda3.jpg" alt="Veranda area" />
 
-  <h2>Garden</h2>
-  <p>
-    Our peaceful <span class="highlight">garden</span> is equipped with <span class="highlight">sunbeds, umbrellas, and a gazebo</span>. Under the gazebo, you'll find a <span class="highlight">table and chairs</span> — perfect for relaxing in the shade.
-  </p>
-  <img src="images/garden1.jpg" alt="Garden Area" />
+    <h2>Garden</h2>
+    <p>Our peaceful garden features a gazebo with a table and chairs and a few sunbeds where you can lay in the shade or the sun.</p>
+    <img src="images/garden1.jpg" alt="Garden area" />
 
-  <h2>Pool &amp; Solarium</h2>
-  <p>
-    Enjoy our <span class="highlight">pool</span>, open daily from <span class="highlight">09:00 AM to 07:00 PM</span>, along with our sunny <span class="highlight">solarium area</span>. There's also a <span class="highlight">shower</span> for your convenience.
-  </p>
-  <img src="images/pool.jpg" alt="Pool and Solarium Area" />
+    <h2>Pool and Solarium</h2>
+    <p>Our small pool is open from 9 AM to 7 PM, and it’s perfect for relaxing and cooling off in the warmer months. Around it you’ll find the solarium with more sunbeds, umbrellas, and an outdoor shower.</p>
+    <img src="images/pool.jpg" alt="Pool and solarium" />
 
-  <h2>Parking</h2>
-  <p>
-    <span class="highlight">Parking is available on request</span>. Please contact us in advance after your reservation to arrange a spot.
-  </p>
-</main>
+    <h2>Parking</h2>
+    <p>Parking is available only on request and must be arranged with us after the reservation.</p>
+  </main>
 
-<footer>
-  <p>📍 <strong>Summer Colors Rooms and Apartments</strong></p>
-  <p>📧 <a href="mailto:summercolors2025@gmail.com">summercolors2025@gmail.com</a></p>
-  <p>📞 +39 339 876 1635</p>
-  <p>📲 Instagram: <a href="https://instagram.com/summercolors2025" target="_blank">@summercolors2025</a></p>
-  <p>📘 Facebook: <a href="https://www.facebook.com/profile.php?id=61575784452189" target="_blank">Summer Colors</a></p>
-  <p>📍 Address: Via Rivolo 2, Meta di Sorrento, NA Italia</p>
-</footer>
+  <footer>
+    <p><strong>Summer Colors Rooms and Apartments</strong></p>
+    <p>📧 <a href="mailto:summercolors2025@gmail.com">summercolors2025@gmail.com</a></p>
+    <p>📞 +39 339 876 1635</p>
+    <p>📲 Instagram: <a href="https://instagram.com/summercolors2025" target="_blank">@summercolors2025</a></p>
+    <p>📘 Facebook: <a href="https://www.facebook.com/profile.php?id=61575784452189" target="_blank">Summer Colors</a></p>
+    <p>📍 Via Rivolo 2, Meta di Sorrento, NA Italia</p>
+  </footer>
 
 </body>
 </html>
