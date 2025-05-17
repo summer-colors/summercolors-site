@@ -38,14 +38,18 @@
       background-color: #87cde9;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;   /* allow wrapping on small screens */
+      padding: 10px;
     }
 
     nav a {
       color: #17678c;
       text-decoration: none;
-      padding: 14px 20px;
+      padding: 10px 15px;
       font-weight: bold;
       font-size: 18px;
+      flex-shrink: 0;   /* prevent shrinking */
+      white-space: nowrap; /* prevent links breaking mid-word */
     }
 
     nav a:hover {
@@ -90,6 +94,56 @@
       color: #17678c;
       text-decoration: none;
     }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive styles for mobile devices */
+    @media (max-width: 600px) {
+      header {
+        padding: 25px 15px;
+      }
+      header h1 {
+        font-size: 36px;
+      }
+      header p {
+        font-size: 18px;
+      }
+      nav {
+        padding: 5px;
+      }
+      nav a {
+        font-size: 16px;
+        padding: 8px 12px;
+      }
+      main {
+        padding: 20px 15px;
+      }
+      h2 {
+        font-size: 28px;
+        margin-top: 20px;
+      }
+      p, ul {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      ul {
+        padding-left: 15px;
+      }
+      footer {
+        padding: 15px 10px;
+        font-size: 14px;
+      }
+    }
+
+    /* Extra small screen tweak */
+    @media (max-width: 400px) {
+      nav a {
+        font-size: 14px;
+        padding: 6px 10px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -102,8 +156,8 @@
   <nav>
     <a href="index.html">Home</a>
     <a href="rooms & apartments.html">Rooms & Apartments</a>
+    <a href="common-areas.html">Our Common Areas</a>
     <a href="extra-services.html">Extra Services</a>
-    <a href="common-areas.html">Our Common Areas</a>  <!-- NEW LINK HERE -->
     <a href="contact.html">Contact</a>
   </nav>
 
@@ -112,13 +166,13 @@
     <p>At Summer Colors Rooms & Apartments, we’re dedicated to offering much more than just a place to sleep. Our goal is to help you enjoy every moment of your stay in the Sorrento Peninsula. That’s why we offer a range of thoughtful extra services designed to make your experience comfortable, personalized, and unforgettable.</p>
 
     <ul>
-      <li>  Personalized guest assistance from our multilingual concierge (English, Italian, Spanish, German)</li>
-      <li>  Booking of private transfer services</li>
-      <li>  Assistance in booking private and group day tours to Capri, Amalfi Coast, Pompeii, and more</li>
-      <li>  Cooking class bookings for authentic Italian culinary experiences</li>
-      <li>  Restaurant recommendations and reservations</li>
-      <li>  Personalized suggestions on what to do, where to go, and hidden gems in the area</li>
-      <li>  On-site sale of drinks and snacks – no need to leave the property</li>
+      <li>Personalized guest assistance from our multilingual concierge (English, Italian, Spanish, German)</li>
+      <li>Booking of private transfer services</li>
+      <li>Assistance in booking private and group day tours to Capri, Amalfi Coast, Pompeii, and more</li>
+      <li>Cooking class bookings for authentic Italian culinary experiences</li>
+      <li>Restaurant recommendations and reservations</li>
+      <li>Personalized suggestions on what to do, where to go, and hidden gems in the area</li>
+      <li>On-site sale of drinks and snacks – no need to leave the property</li>
     </ul>
 
     <p>We’re here to help you make the most of your time in Meta di Sorrento. Whether you’re looking to relax, explore, or enjoy local culture, just let us know—we’ll take care of the rest!</p>
