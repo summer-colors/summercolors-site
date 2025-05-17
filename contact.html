@@ -41,20 +41,22 @@
       margin-top: 10px;
       font-style: italic;
     }
-
     nav {
-      background-color: #87cde9;
-      display: flex;
-      justify-content: center;
-    }
+  background-color: #87cde9;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* ✅ this ensures items move to new lines */
+  padding: 10px;
+}
 
-    nav a {
-      color: #17678c;
-      text-decoration: none;
-      padding: 14px 20px;
-      font-weight: bold;
-      font-size: 18px;
-    }
+nav a {
+  color: #17678c;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 18px;
+  flex-shrink: 0; /* ✅ prevents shrinking too small */
+}
 
     nav a:hover {
       background-color: #a3daf0;
