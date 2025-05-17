@@ -41,22 +41,23 @@
       margin-top: 10px;
       font-style: italic;
     }
-    nav {
-  background-color: #87cde9;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; /* ✅ this ensures items move to new lines */
-  padding: 10px;
-}
 
-nav a {
-  color: #17678c;
-  text-decoration: none;
-  padding: 10px 15px;
-  font-weight: bold;
-  font-size: 18px;
-  flex-shrink: 0; /* ✅ prevents shrinking too small */
-}
+    nav {
+      background-color: #87cde9;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; /* ensures items move to new lines */
+      padding: 10px;
+    }
+
+    nav a {
+      color: #17678c;
+      text-decoration: none;
+      padding: 10px 15px;
+      font-weight: bold;
+      font-size: 18px;
+      flex-shrink: 0; /* prevents shrinking too small */
+    }
 
     nav a:hover {
       background-color: #a3daf0;
@@ -89,6 +90,8 @@ nav a {
 
     li {
       margin-bottom: 10px;
+      font-size: 20px;
+      line-height: 1.6;
     }
 
     footer {
@@ -107,6 +110,45 @@ nav a {
 
     a:hover {
       text-decoration: underline;
+    }
+
+    /* Responsive styles for mobile devices */
+    @media (max-width: 600px) {
+      header {
+        padding: 20px 15px;
+      }
+      header h1 {
+        font-size: 40px;
+        letter-spacing: 1px;
+      }
+      header p {
+        font-size: 18px;
+      }
+      nav {
+        padding: 5px;
+      }
+      nav a {
+        font-size: 16px;
+        padding: 8px 12px;
+      }
+      main {
+        padding: 20px 15px;
+      }
+      h2 {
+        font-size: 28px;
+        margin-top: 20px;
+      }
+      p, .contact-info p, li {
+        font-size: 16px;
+        line-height: 1.4;
+      }
+      ul {
+        padding-left: 15px;
+      }
+      footer {
+        padding: 15px 10px;
+        font-size: 14px;
+      }
     }
   </style>
 </head>
@@ -138,7 +180,7 @@ nav a {
 
     <h2>How to Book</h2>
     <p>You can easily make a reservation through the platforms below, or <strong>book directly with us</strong> for the best personal assistance and availability:</p>
-    <ul style="font-size: 20px; line-height: 1.6;">
+    <ul>
       <li><a href="https://www.booking.com/hotel/it/summer-colors-rooms-amp-apartments.html?aid=304142&label=opensearch-plugin&sid=51d996db81ebb7c0f1c0df69eaf14d13&all_sr_blocks=1139031604_386799389_2_0_0&checkin=2025-08-01&checkout=2025-08-10&dest_id=11390316&dest_type=hotel&dist=0&group_adults=2&group_children=0&hapos=1&highlighted_blocks=1139031604_386799389_2_0_0&hpos=1&matching_block_id=1139031604_386799389_2_0_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=1139031604_386799389_2_0_0__160020&srepoch=1746983173&srpvid=797d783f88170f5e&type=total&ucfs=1" target="_blank"> Booking.com – Summer Colors Profile</a></li>
       <li><a href="https://www.airbnb.it/rooms/1071563288776808564?source_impression_id=p3_1739438305_P3PI594MzjRi_9qU" target="_blank"> Airbnb – View Our Listing</a></li>
       <li><a href="https://www.expedia.it/Meta-Hotel-Summer-Colors-Rooms-Apartments.h101771653.Informazioni-Hotel?currency=EUR&siteid=8" target="_blank"> Expedia – Reserve Your Stay</a></li>
