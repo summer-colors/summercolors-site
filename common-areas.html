@@ -74,13 +74,14 @@
       color: #000;
     }
 
-    img {
+    .responsive-img {
       width: 100%;
-      max-height: 600px;
-      object-fit: cover;
+      max-width: 800px;
+      height: auto;
       border-radius: 10px;
-      margin: 20px 0;
+      margin: 20px auto;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: block;
     }
 
     footer {
@@ -129,9 +130,9 @@
         font-size: 16px;
         line-height: 1.5;
       }
-      img {
+      .responsive-img {
+        max-width: 100%;
         max-height: 300px;
-        margin: 15px 0;
       }
       footer {
         padding: 15px 10px;
@@ -165,23 +166,23 @@
   <main>
     <h2>Reception</h2>
     <p>The reception is open from 12 to 8 PM and we assist with restaurant reservations, tour and transfer bookings, or just providing local tips.</p>
-    <img src="images/reception1.jpg" alt="Reception area" />
+    <img src="images/reception1.jpg" alt="Reception area" class="responsive-img" />
 
     <h2>Entrance and Lounge Area</h2>
     <p>Right by the entrance we have a welcoming lounge with a few sofas and chairs, ideal for relaxing while waiting for a transfer, or just resting. There is also a toilet available in this area and we can store your luggage if needed.</p>
-    <img src="images/entrance2.jpg" alt="Lounge and entrance" />
+    <img src="images/entrance2.jpg" alt="Lounge and entrance" class="responsive-img" />
 
     <h2>Veranda</h2>
     <p>In our veranda you can find a surface to eat or prepare simple meals, a sink, some plates, cutlery, cups, and so on. There’s also an iron and ironing board available, and a nice view of the pool and garden.</p>
-    <img src="images/veranda3.jpg" alt="Veranda area" />
+    <img src="images/veranda3.jpg" alt="Veranda area" class="responsive-img" />
 
     <h2>Garden</h2>
     <p>Our peaceful garden features a gazebo with a table and chairs and a few sunbeds where you can lay in the shade or the sun.</p>
-    <img src="images/garden1.jpg" alt="Garden area" />
+    <img src="images/garden1.jpg" alt="Garden area" class="responsive-img" />
 
     <h2>Pool and Solarium</h2>
     <p>Our small pool is open from 9 AM to 7 PM, and it’s perfect for relaxing and cooling off in the warmer months. Around it you’ll find the solarium with more sunbeds, umbrellas, and an outdoor shower.</p>
-    <img src="images/pool.jpg" alt="Pool and solarium" />
+    <img src="images/pool.jpg" alt="Pool and solarium" class="responsive-img" />
 
     <h2>Parking</h2>
     <p>Parking is available only on request and must be arranged with us after the reservation.</p>
