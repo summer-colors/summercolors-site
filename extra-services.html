@@ -38,7 +38,7 @@
       background-color: #87cde9;
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;   /* allow wrapping on small screens */
+      flex-wrap: wrap; /* ensures items move to new lines */
       padding: 10px;
     }
 
@@ -48,8 +48,7 @@
       padding: 10px 15px;
       font-weight: bold;
       font-size: 18px;
-      flex-shrink: 0;   /* prevent shrinking */
-      white-space: nowrap; /* prevent links breaking mid-word */
+      flex-shrink: 0; /* prevents shrinking too small */
     }
 
     nav a:hover {
@@ -155,7 +154,7 @@
 
   <nav>
     <a href="index.html">Home</a>
-    <a href="rooms & apartments.html">Rooms & Apartments</a>
+    <a href="rooms & apartments.html"> Our Rooms & Apartments</a>
     <a href="common-areas.html">Our Common Areas</a>
     <a href="extra-services.html">Extra Services</a>
     <a href="contact.html">Contact</a>
