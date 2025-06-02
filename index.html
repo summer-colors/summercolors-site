@@ -27,7 +27,7 @@
       background-image: url('images/house.jpg');
       background-size: cover;
       background-position: center;
-      height: 400px;
+      height: 500px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -40,7 +40,7 @@
       content: "";
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-      background-color: rgba(0, 0, 0, 0.4);
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
       z-index: 0;
     }
 
@@ -50,25 +50,25 @@
     }
 
     header h1 {
-      font-size: 100px;
+      font-size: 120px;
       margin: 0;
-      font-weight: 600;
-      letter-spacing: 2px;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.7);
       color: #ffffff;
     }
 
     header h2 {
-      font-size: 34px;
-      margin-top: 10px;
+      font-size: 40px;
+      margin-top: 15px;
       font-weight: 400;
       font-style: italic;
-      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
       color: #ffffff;
     }
 
     nav {
-      background-color: #87cde9;
+      background-color: #6ec1e4;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -76,19 +76,20 @@
     }
 
     nav a {
-      color: #17678c;
+      color: #144e6e;
       text-decoration: none;
       padding: 10px 15px;
       font-weight: bold;
       font-size: 18px;
       flex-shrink: 0;
+      transition: background-color 0.3s ease;
     }
 
     nav a:hover {
-      background-color: #a3daf0;
+      background-color: #8fd5f0;
+      border-radius: 6px;
     }
 
-    /* ✅ Responsive nav for small screens */
     @media (max-width: 600px) {
       nav {
         flex-direction: column;
@@ -142,6 +143,7 @@
       margin: 40px auto;
       overflow: hidden;
       border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
     .slides {
@@ -185,7 +187,7 @@
       width: 100%;
       height: auto;
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       margin-bottom: 30px;
       display: block;
       margin-left: auto;
@@ -196,7 +198,7 @@
       width: 100%;
       height: auto;
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       margin-bottom: 30px;
     }
 
